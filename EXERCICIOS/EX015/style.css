@@ -1,0 +1,17 @@
+@charset "UTF-8";       
+        
+body{
+    background-color:rgb(244, 132, 244);
+    font-family: arial;
+    font-size: 20px;
+}
+h1{
+    color: purple;
+    background-color: lightcoral;
+}
+h2{
+    color: purple;
+}
+p{
+    text-align: justify;
+}
