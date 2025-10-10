@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: purple;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 550px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.397);
+    overflow: hidden;
+}
+
+div#img {
+    display: block;
+    background: blue url(../imagens/imagem.jpg) no-repeat center center;
+    height: 35vh;
+
+}
+
+div#login2 {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+div#login2 > p {
+    text-align: justify;
+    font-size: 0.8em;
+    padding-bottom: 10px;
+}
+
+i {
+    padding: 12px;
+    margin-bottom: 1px;
+    background-color: purple;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+input.login {
+    padding: 2px;
+    height: 42px;
+    width: 220px;
+    transform: translate(-10px, -6px);
+    border: 2px solid purple;
+    border-radius: 10px;
+    margin-bottom: 1px;
+    font-size: 1.2em;
+}
+.Entrar {
+    width: 275px;
+    height: 42px;
+    border-radius: 10px;
+}
