@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --fundo-principal: #f5f5f5;
+    --texto: #222222;
+    --texto-inverso: white;
+    --destaque: #0077ff;
+    --destaque-inverso: #66bbff;
+    --fundo-card: #ffffff;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5em;
+    background-color: var(--fundo-principal);
+    color: var(--texto);
+}
+
+header {
+    background-color: var(--destaque);
+    color: var(--texto);
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+nav#menu ul{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav#menu a {
+    text-decoration: none;
+    color: var(--texto-inverso);
+    font-weight: 600;
+    padding: 12px 15px;
+    border-radius: 5px;
+    transition: background-color .5s, color .5s;
+
+}
+
+nav#menu a:hover{
+    background-color: var(--destaque-inverso);
+    color: var(--destaque);
+}
+
+main {
+    display: grid;
+    grid-template: auto auto auto / auto 90vw auto;
+    margin-top: 10px;
+}
+
+section#profile {
+    background-color: var(--fundo-card);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.407);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section#profile img{
+    border-radius: 50%;
+    border: 5px solid var(--destaque);
+    align-self: center;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+section#profile aside {
+    display: flex;
+    align-self: center;
+}
+
+section#profile ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+section#profile a {
+    text-decoration: none;
+    color: var(--destaque);
+    font-weight: 600;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+section#profile h2 {
+    color: var(--destaque);
+    padding: 10px;
+}
+
+section#profile p{
+    text-align: left;
+    font-size: .9em;
+    padding: 10px;
+    margin-bottom: 10px;
+}
